@@ -56,7 +56,7 @@ dev = [
 
 # Allow your package to be called from the command line
 [project.scripts]
-candiamazing = "candiamazing:main"
+candiamazing = "candiamazing.cli:main"
 
 
 [tool.hatch.version]
