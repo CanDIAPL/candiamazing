@@ -19,14 +19,14 @@ def test_flux_mag(zeropoint, flux):
     flux_back = mag_to_flux(mag, zeropoint)
 
     # These are the actual "tests"
-    assert abs(flux - flux_back) < 1e-10, "Round trip flux -> mag -> flux failed"
+    assert np.all(np.abs(flux - flux_back) < 1e-10), "Round trip flux -> mag -> flux failed"
 
-    assert mag == pytest.approx(
-        (zeropoint - 2.5 * np.log10(flux))
+    assert np.all(
+        mag == pytest.approx((zeropoint - 2.5 * np.log10(flux)))
     ), "flux_to_mag calculation incorrect"
 
-    assert flux == pytest.approx(
-        (10 ** ((zeropoint - mag) / 2.5))
+    assert np.all(
+        flux == pytest.approx((10 ** ((zeropoint - mag) / 2.5)))
     ), "mag_to_flux calculation incorrect"
 
 

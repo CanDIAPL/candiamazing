@@ -6,7 +6,6 @@ build-backend = "hatchling.build"
 [project]
 name = "candiamazing" # install name: pip install candiamazing
 dynamic = [
-        "dependencies",
         "version"
 ]
 authors = [

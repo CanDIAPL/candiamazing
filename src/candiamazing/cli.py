@@ -40,7 +40,7 @@ def main(args=None):
         sys.exit(1)
 
     if args is None:
-        args = sys.argv
+        args = sys.argv[1:]
     args = parser.parse_args(args)
 
     # 4. Execute the mapped function
