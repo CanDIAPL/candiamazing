@@ -93,3 +93,5 @@ select = [
  "B",   # bugbear (common bugs)
  "UP",  # pyupgrade (modern Python idioms)
 ]
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"

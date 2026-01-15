@@ -4,21 +4,21 @@ A template for designing a repository for a scientific python package.
 
 ## Manage package and dependencies
 
-Go to the `pyproject.toml` file
+see the `pyproject.toml` file for how to manage the package
+
+## Package structure
+
+Explain what src, tests, docs are for.
 
 ## Branching, Pull-Requests
 
-Explain basics, point ot resources
+Explain basics of branching, issues, and pull requests. Point to resources on more information
 
 ## Automated testing, unit testing
 
-See the `.github/workflows/*.yaml` files
+See the `.github/workflows/*.yaml` files. Brief description of what they do
 
 ## Setup bots/linting/formatting
-
-### Black
-
-How to get black online
 
 ### Ruff
 
@@ -37,6 +37,15 @@ How to get Pre-commit online
 ### Codecov
 
 How to get codecov online
+
+
+### Readthedocs
+
+Explain basic steps for getting readthedocs online, point to their tutorials
+
+#### Jupyter-book
+
+Explain what jupyter-book is and basics of getting set up, point to their tutorials for more info.
 
 ## Releases
 
