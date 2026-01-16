@@ -1,5 +1,6 @@
 from .core import BaseConverter, BrightnessConverter, DistanceConverter
 from . import utils
+from .test import test
 
 try:
     from ._version import version as __version__  # noqa
@@ -14,6 +15,7 @@ __all__ = (
     "BrightnessConverter",
     "DistanceConverter",
     "utils",
+    "test",
     "__version__",
     "__author__",
 )
