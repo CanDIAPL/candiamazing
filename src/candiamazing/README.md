@@ -92,7 +92,14 @@ candiamazing = "candiamazing.cli:main"
 
 This tells pip during installation: *When the user types `candiamazing` in their terminal, run the `main()` function inside `cli.py`.*
 
-### 4. `__init__.py`: The Package Gateway
+### 4. `test.py`: A quick check
+
+This file runs a few simple checks very quickly. As part of the installation process users can run this function.
+
+* **Role** Ensure the package has been properly installed and any required information is available
+* **Why it matters** It reassures the user that the package is ready to go. Can be used to check finicky things like configuration files, environment variables, compiled code, and data files
+
+### 5. `__init__.py`: The Package Gateway
 
 This file turns a simple directory of scripts into a formal Python package. It executes automatically when the package is imported.
 
