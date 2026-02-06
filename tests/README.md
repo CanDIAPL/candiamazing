@@ -131,3 +131,20 @@ def test_command_line(monkeypatch):
 
 ```
 
+## Further tests
+
+There is no end to the amount of testing you can do for your package. The more
+you do, the more confident you will be that everything is working properly as
+more people use your package. Above, we described a number of "Unit tests" that
+check small sections of your code to see they produce the expected behaviour.
+Depending on the type of package, you may also wish to run "Simulation tests"
+these mock up a simulation of the load that your package will have to handle in
+a more realistic scenario. They can test a full analysis pipeline run over an
+intermediate example dataset. This can be useful for discovering cases where
+chunks of your code, that work individually, fail to properly communicate with
+each other (e.g. arguments in the wrong order). It can also check for leaks
+where some state in your code isn't properly erased between runs and so in a
+production scenario you find that some files get unreasonably large, or the
+results start to get less accurate as configuration from previous tests leaks
+through. These simulation tests can identify a number of problems before you
+push to your primary resource and begin a large analysis run.
