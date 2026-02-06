@@ -4,6 +4,8 @@ This directory contains the source files for the `candiamazing` documentation we
 
 Unlike standard comments in your code, this folder allows you to write full tutorials, include mathematical equations, and even execute Python code directly in the browser.
 
+> Note: This README does nothing for the package, you may remove it when you understand the contents.
+
 ## File Breakdown
 
 Here is an explanation of the standard files you will find in this directory and what role they play in the documentation build process.

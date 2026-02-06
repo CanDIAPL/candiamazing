@@ -1,3 +1,6 @@
+"""Tests for the main interface of your package. Try to check both expected
+outputs and expected failure modes."""
+
 import numpy as np
 import pytest
 

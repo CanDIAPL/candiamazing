@@ -2,12 +2,15 @@
 Command-line interface for the candiamazing package.
 
 This module defines a small, example-driven CLI that exposes flux - magnitude
-conversion utilities via subcommands. 
+conversion utilities via subcommands.
 
 Try it with either
 
-python ./src/candiamazing/cli.py --help
-candiamazing --help
+python ./src/candiamazing/cli.py --help candiamazing --help
+
+If your package has a command-line-interface, put it here. Otherwise, you may
+delete this file. Just make sure to also remove it from the __init__.py file and
+from the unit tests.
 
 """
 
@@ -36,9 +39,7 @@ def build_parser() -> argparse.ArgumentParser:
     indentation are preserved in the help output.
     """
     parser = argparse.ArgumentParser(
-        description=(
-            "Convert between fluxes and magnitudes using a simple magnitude system."
-        ),
+        description=("Convert between fluxes and magnitudes using a simple magnitude system."),
         epilog=(
             "Examples:\n"
             "  candiamazing flux_to_mag 3631 8.9\n"
@@ -77,7 +78,7 @@ def add_flux_to_mag_subcommand(subparsers: argparse._SubParsersAction) -> None:
 
 def add_mag_to_flux_subcommand(subparsers: argparse._SubParsersAction) -> None:
     """Register the 'mag_to_flux' subcommand and its arguments."""
-    
+
     parser_mag_to_flux = subparsers.add_parser(
         "mag_to_flux",
         help="Convert magnitude to flux",
@@ -113,5 +114,5 @@ def main(argv: list[str] | None = None) -> int:
 
 
 if __name__ == "__main__":
-     # Delegate to main() and return its exit code
+    # Delegate to main() and return its exit code
     raise SystemExit(main())

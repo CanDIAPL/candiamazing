@@ -4,6 +4,10 @@ This repository demonstrates the canonical structure of a modern Python package.
 
 The package implements simple astronomical conversions (flux/magnitudes and distance moduli) to illustrate where different types of logic should live in a production-grade library.
 
+To learn more about the template and setup procedures of the tools check out the [Candiamazing Doc](https://docs.google.com/document/d/1OfXHjr-KrlGU0lCTQMAaD9HKmkJhQEM6FO9M_f2uxa8/edit?usp=sharing).
+
+> Note: This README gets loaded as the front page of the GitHub repo, include a description of your package here and point to your primary documentation source if you have it.
+
 ## Project Structure
 
 For a user cloning this template, the directory structure looks like this:

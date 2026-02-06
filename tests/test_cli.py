@@ -1,3 +1,6 @@
+"""Unit tests for command-line interface. Modify these tests for your use case
+if you have a CLI. If not, you may remove these tests."""
+
 import pytest
 
 from candiamazing.cli import main

@@ -2,6 +2,8 @@
 
 This directory contains the automated test suite for `candiamazing`. We use **pytest**, the industry-standard framework for testing Python code.
 
+> Note: This README does nothing for the package, you may remove it when you understand the contents.
+
 ## What is Pytest?
 Pytest is a tool that finds and runs your tests. It is designed to be:
 1.  **Automatic:** It crawls your directory looking for files starting with `test_` and runs them.

@@ -4,6 +4,8 @@ This repository demonstrates the canonical structure of a modern Python package.
 
 The package implements simple astronomical conversions (flux/magnitudes and distance moduli) to illustrate where different types of logic should live in a production-grade library.
 
+> Note: This README does nothing for the package, you may remove it when you understand the contents.
+
 ## Package Layout & Philosophy
 
 When structuring a package, the goal is **Separation of Concerns**. We separate the "heavy lifting" (classes/logic), the low-level utilities (stateless math), and the user interface (CLI).
