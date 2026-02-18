@@ -50,6 +50,7 @@ Issues = "https://github.com/CanDIAPL/candiamazing/issues"
 dev = [
     "ruff",
     "pytest>=8.0,<9",
+    "pytest-cov",
     "ipywidgets",
     "matplotlib",
     "mypy"
@@ -104,3 +105,12 @@ convention = "numpy"
 packages = ["candiamazing"]
 ignore_missing_imports = true
 strict = false
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = [
+  "-ra",  # detailed report at the end, including all except passed tests
+  "--cov=src", # check coverage of code in src/ directory
+  "--cov-report=term-missing", # prints uncovered lines at the end
+]
