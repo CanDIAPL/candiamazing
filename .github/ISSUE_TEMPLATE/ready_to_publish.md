@@ -24,8 +24,12 @@ Add a brief summary here of what the tool does and any details the reviewer shou
 ## Check-list (for the reviewer to fill in)
 - [ ] 75% code coverage in unit testing
 - [ ] Separate branches for staging and production (e.g. `staging` and `main`)
-- [ ] It is clear how the tool is deployed (CD, Docker registry, etc)
+- [ ] It is clear how the tool is deployed (Harbor containers are encouraged)
 - [ ] Someone has used the tool through the staging MMP portal
+- [ ] There is a clear point of contact for the tool going forward
+- [ ] Has there been any consideration for benchmarking the tool's performance (e.g. memory use, multiple users, etc)
+- [ ] (*If applicable*) The tool uses a secure login (e.g. CACD login)
+- [ ] A process is in place to identify vulnerabilities and apply security updates (Harbor can help with these)
 
 ---
 
